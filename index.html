@@ -9,13 +9,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
-    <h1>World Clock</h1>
-    <footer>
-      This project was coded by Anna Oliwia Wierzbicka, and is open-sourced on
-      <a href="https://github.com/AnnaOW/World-clock-app" target="_blank"
-        >GitHub</a
-      >.
-    </footer>
+    <div class="container">
+      <h1>World Clock</h1>
+      <select name="cities" id="city-select">
+      <option value="">--Please choose a city--</option>
+      <option value="current-location">Current location</option>
+      <option value="warsaw">Warsaw</option>
+      <option value="beijing">Beijing</option>
+      <option value="lima">Lima</option>
+      <div class="cities-display">
+        <h2>New York</h2>
+        <div class="date"></div>
+        <div class="time"></div>
+        <h2>London</h2>
+        <div class="date"></div>
+        <div class="time"></div>
+        <h2>Tokyo</h2>
+        <div class="date"></div>
+        <div class="time"></div>
+        <h2>Auckland</h2>
+        <div class="date"></div>
+        <div class="time"></div>
+      </div>
+      <footer>
+        This project was coded by Anna Oliwia Wierzbicka, and is open-sourced on
+        <a href="https://github.com/AnnaOW/World-clock-app" target="_blank"
+          >GitHub</a
+        >.
+      </footer>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
