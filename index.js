@@ -21,6 +21,17 @@ function updateTime() {
     londonTimeElement.innerHTML = londonTime.format("HH:mm:ss");
   }
 
+  // Dubai
+  let dubaiElement = document.querySelector("#dubai");
+  if (dubaiElement) {
+    let dubaiDateElement = dubaiElement.querySelector(".date");
+    let dubaiTimeElement = dubaiElement.querySelector(".time");
+    let dubaiTime = moment().tz("Asia/Dubai");
+
+    dubaiDateElement.innerHTML = dubaiTime.format("dddd, MMMM Do YYYY");
+    dubaiTimeElement.innerHTML = dubaiTime.format("HH:mm:ss");
+  }
+
   // Tokyo
   let tokyoElement = document.querySelector("#tokyo");
   if (tokyoElement) {
@@ -30,17 +41,6 @@ function updateTime() {
 
     tokyoDateElement.innerHTML = tokyoTime.format("dddd, MMMM Do YYYY");
     tokyoTimeElement.innerHTML = tokyoTime.format("HH:mm:ss");
-  }
-
-  // Auckland
-  let aucklandElement = document.querySelector("#auckland");
-  if (aucklandElement) {
-    let aucklandDateElement = aucklandElement.querySelector(".date");
-    let aucklandTimeElement = aucklandElement.querySelector(".time");
-    let aucklandTime = moment().tz("Asia/Tokyo");
-
-    aucklandDateElement.innerHTML = aucklandTime.format("dddd, MMMM Do YYYY");
-    aucklandTimeElement.innerHTML = aucklandTime.format("HH:mm:ss");
   }
 }
 
